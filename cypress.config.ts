@@ -1,9 +1,15 @@
-const { defineConfig } = require("cypress");
+import { defineConfig } from 'cypress'
 
-module.exports = defineConfig({
+export default defineConfig({
+  // setupNodeEvents can be defined in either
+  // the e2e or component configuration
   e2e: {
     setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
-  },
-});
+      // modify config values examples
+      // config.defaultCommandTimeout = 10000
+
+      // IMPORTANT return the updated config object
+      return config
+    }
+  }
+})
