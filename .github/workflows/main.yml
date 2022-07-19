@@ -14,7 +14,6 @@ jobs:
           node-version: 16
           cache: "npm"
       # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
       - name: Install
         run: npm ci
       - name: Code style
@@ -24,4 +23,3 @@ jobs:
         with:
           browser: chrome
           headed: true
-      
