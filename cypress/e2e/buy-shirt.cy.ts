@@ -9,7 +9,7 @@ describe("Buy a t-shirt", () => {
     cy.get(".cart_navigation span").click();
     cy.get("#email").type("aperdomobo@gmail.com");
     cy.get("#passwd").type("WorkshopProtractor");
-    cy.get(".login");
+    cy.get(".login").click();
     cy.get(".cart_navigation > .button > span");
     cy.get("#cgv");
     cy.get(".cart_navigation > .button > span");
