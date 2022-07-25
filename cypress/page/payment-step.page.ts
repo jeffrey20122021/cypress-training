@@ -7,7 +7,7 @@ class PaymentStepPage {
         this.confirmOrderMessage = "#cart_navigation>button>span";
     }
 
-    public confirmOrdermethod(): void {
+    public confirmOrder(): void {
         cy.get(this.confirmOrderMessage).click();
     }
 
