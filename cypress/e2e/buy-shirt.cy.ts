@@ -32,7 +32,7 @@ describe("Buy a t-shirt", () => {
     shippingStep.check();
     shippingStep.proceedCheckout();
     paymentStep.bankwirePay();
-    paymentStep.confirmOrdermethod();
+    paymentStep.confirmOrder();
     paymentStep.confirmMessage(message);
   });
 });
