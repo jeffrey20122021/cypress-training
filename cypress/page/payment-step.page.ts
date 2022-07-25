@@ -1,14 +1,14 @@
 class PaymentStepPage {
     private payButton: string;
-    private confirmOrder: string;
+    private confirmOrderMessage: string;
 
     constructor() {
         this.payButton = "a.bankwire";
-        this.confirmOrder = "#cart_navigation>button>span";
+        this.confirmOrderMessage = "#cart_navigation>button>span";
     }
 
     public confirmOrdermethod(): void {
-        cy.get(this.confirmOrder).click();
+        cy.get(this.confirmOrderMessage).click();
     }
 
     public bankwirePay(): void {

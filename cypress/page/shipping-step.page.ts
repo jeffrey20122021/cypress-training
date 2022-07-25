@@ -11,7 +11,7 @@ class ShippingStepPage {
         cy.get(this.termsCheck).click();
     }
 
-    public pcheckout(): void {
+    public proceedCheckout(): void {
         cy.get(this.checkbtn).click();
     }
 }
