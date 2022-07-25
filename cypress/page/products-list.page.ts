@@ -7,11 +7,11 @@ class ProductListPage {
       this.checkout = "[style*='display: block;'] .button-container > a";
     }
   
-    public addtocart(): void {
+    public addcart(): void {
       cy.get(this.addbtn).click();
     }
   
-    public pchecjout(): void {
+    public pcheckout(): void {
       cy.get(this.checkout).click();
     }
   }
