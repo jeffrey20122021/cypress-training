@@ -7,11 +7,11 @@ class PaymentStepPage {
         this.confirmOrder = "#cart_navigation>button>span";
     }
 
-    public confirmOrderm(): void {
+    public confirmOrdermethod(): void {
         cy.get(this.confirmOrder).click();
     }
 
-    public bankwirepay(): void {
+    public bankwirePay(): void {
         cy.get(this.payButton).click()
     }
 

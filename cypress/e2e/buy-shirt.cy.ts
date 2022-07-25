@@ -30,9 +30,9 @@ describe("Buy a t-shirt", () => {
     loginPage.login(email, password);
     addressStep.goTologinButton();
     shippingStep.check();
-    shippingStep.pcheckout();
-    paymentStep.bankwirepay();
-    paymentStep.confirmOrderm();
+    shippingStep.proceedCheckout();
+    paymentStep.bankwirePay();
+    paymentStep.confirmOrdermethod();
     paymentStep.confirmMessage(message);
   });
 });
