@@ -1,10 +1,12 @@
-import {MenuContentPage} from "../page/index";
-import {LoginPage} from "../page/index";
-import {AddressStepPage} from "../page/index";
-import {ShippingStepPage} from "../page/index";
-import {PaymentStepPage} from "../page/index";
-import {ShopingCartPage} from "../page/index";
-import {ProductListPage} from "../page/index";
+import {
+  MenuContentPage,
+  LoginPage,
+  AddressStepPage,
+  ShippingStepPage,
+  PaymentStepPage,
+  ShopingCartPage,
+  ProductListPage,
+} from "../page/index";
 
 const menuContentPage = new MenuContentPage();
 const loginPage = new LoginPage();

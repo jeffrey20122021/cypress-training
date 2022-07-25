@@ -1,4 +1,4 @@
-class  PaymentStepPage {
+class PaymentStepPage {
     private payButton: string;
     private confirmOrder: string;
 
@@ -18,6 +18,6 @@ class  PaymentStepPage {
     public confirmMessage(message: string) {
         cy.get("#center_column > div > p > strong").should("have.text", message);
         return this;
-}
+    }
 }
 export { PaymentStepPage }
