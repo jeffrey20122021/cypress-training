@@ -3,7 +3,7 @@ class ShippingStepPage {
     private termsCheck: string;
 
     constructor() {
-        this.checkbtn = ".cart_navigation > .button > span";
+        this.checkbtn = ".cart_navigation .button span";
         this.termsCheck = "#cgv";
     }
 

@@ -1,10 +1,11 @@
 class PaymentStepPage {
     private payButton: string;
     private confirmOrderMessage: string;
+    
 
     constructor() {
-        this.payButton = "a.bankwire";
-        this.confirmOrderMessage = "#cart_navigation>button>span";
+        this.payButton = "a[title='Pay by bank wire'].bankwire";
+        this.confirmOrderMessage = "#cart_navigation .button span";
     }
 
     public confirmOrder(): void {
