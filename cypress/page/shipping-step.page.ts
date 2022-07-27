@@ -3,15 +3,15 @@ class ShippingStepPage {
     private termsCheck: string;
 
     constructor() {
-        this.checkbtn = ".cart_navigation .button span";
+        this.checkbtn = ".cart_navigation .button";
         this.termsCheck = "#cgv";
     }
 
-    public CheckTerms(): void {
+    public acceptTerms(): void {
         cy.get(this.termsCheck).click();
     }
 
-    public ProceedCheckout(): void {
+    public proceedCheckout(): void {
         cy.get(this.checkbtn).click();
     }
 }

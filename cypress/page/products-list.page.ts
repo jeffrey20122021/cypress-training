@@ -11,7 +11,7 @@ class ProductListPage {
       cy.get(this.addbtn).click();
     }
   
-    public ProceedToCheckout(): void {
+    public proceedToCheckout(): void {
       cy.get(this.checkout).click();
     }
   }

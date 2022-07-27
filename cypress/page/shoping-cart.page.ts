@@ -2,10 +2,10 @@ class ShopingCartPage {
     private checkbtn: string;
   
     constructor() {
-      this.checkbtn = ".cart_navigation span";
+      this.checkbtn = ".cart_navigation";
     }
   
-    public ProceedTocheckout(): void {
+    public proceedTocheckout(): void {
       cy.get(this.checkbtn).click();
     }
   }

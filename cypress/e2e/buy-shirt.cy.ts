@@ -25,12 +25,12 @@ describe("Buy a t-shirt", () => {
     menuContentPage.visitMenuContentPage();
     menuContentPage.goToTShirtMenu();
     productListPage.addTocart();
-    productListPage.ProceedToCheckout();
-    shopingCartPage.ProceedTocheckout();
+    productListPage.proceedToCheckout();
+    shopingCartPage.proceedTocheckout();
     loginPage.login(email, password);
     addressStep.goTologinButton();
-    shippingStep.CheckTerms();
-    shippingStep.ProceedCheckout();
+    shippingStep.acceptTerms();
+    shippingStep.proceedCheckout();
     paymentStep.bankwirePay();
     paymentStep.confirmOrder();
     paymentStep.confirmMessage(message);
