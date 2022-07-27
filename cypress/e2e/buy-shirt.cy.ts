@@ -24,7 +24,7 @@ describe("Buy a t-shirt", () => {
   it("then should be bought a t-shirt", () => {
     menuContentPage.visitMenuContentPage();
     menuContentPage.goToTShirtMenu();
-    productListPage.addTocart();
+    productListPage.addToCart();
     productListPage.proceedToCheckout();
     shopingCartPage.proceedTocheckout();
     loginPage.login(email, password);

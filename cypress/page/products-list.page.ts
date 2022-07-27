@@ -1,18 +1,18 @@
 class ProductListPage {
-    private addbtn: string;
-    private checkout: string;
+    private additembtn: string;
+    private checkoutitem: string;
   
     constructor() {
-      this.addbtn = ".button-container a[title='Add to cart']";
-      this.checkout = ".button-container a[title='Proceed to checkout']";
+      this.additembtn = ".button-container a[title='Add to cart']";
+      this.checkoutitem = ".button-container a[title='Proceed to checkout']";
     }
   
-    public addTocart(): void {
-      cy.get(this.addbtn).click();
+    public addToCart(): void {
+      cy.get(this.additembtn).click();
     }
   
     public proceedToCheckout(): void {
-      cy.get(this.checkout).click();
+      cy.get(this.checkoutitem).click();
     }
   }
   
