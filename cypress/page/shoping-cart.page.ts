@@ -5,7 +5,7 @@ class ShopingCartPage {
       this.checkbtn = ".cart_navigation span";
     }
   
-    public pcheckout(): void {
+    public ProceedTocheckout(): void {
       cy.get(this.checkbtn).click();
     }
   }

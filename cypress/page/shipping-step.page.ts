@@ -7,11 +7,11 @@ class ShippingStepPage {
         this.termsCheck = "#cgv";
     }
 
-    public check(): void {
+    public CheckTerms(): void {
         cy.get(this.termsCheck).click();
     }
 
-    public proceedCheckout(): void {
+    public ProceedCheckout(): void {
         cy.get(this.checkbtn).click();
     }
 }

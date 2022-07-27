@@ -7,11 +7,11 @@ class ProductListPage {
       this.checkout = ".button-container a[title='Proceed to checkout']";
     }
   
-    public addcart(): void {
+    public addTocart(): void {
       cy.get(this.addbtn).click();
     }
   
-    public pcheckout(): void {
+    public ProceedToCheckout(): void {
       cy.get(this.checkout).click();
     }
   }

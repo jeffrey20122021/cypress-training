@@ -24,13 +24,13 @@ describe("Buy a t-shirt", () => {
   it("then should be bought a t-shirt", () => {
     menuContentPage.visitMenuContentPage();
     menuContentPage.goToTShirtMenu();
-    productListPage.addcart();
-    productListPage.pcheckout();
-    shopingCartPage.pcheckout();
+    productListPage.addTocart();
+    productListPage.ProceedToCheckout();
+    shopingCartPage.ProceedTocheckout();
     loginPage.login(email, password);
     addressStep.goTologinButton();
-    shippingStep.check();
-    shippingStep.proceedCheckout();
+    shippingStep.CheckTerms();
+    shippingStep.ProceedCheckout();
     paymentStep.bankwirePay();
     paymentStep.confirmOrder();
     paymentStep.confirmMessage(message);
