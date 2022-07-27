@@ -1,9 +1,9 @@
 class ShippingStepPage {
-    private checkbtn: string;
+    private proceedToCheckout: string;
     private termsCheck: string;
 
     constructor() {
-        this.checkbtn = ".cart_navigation .button";
+        this.proceedToCheckout = ".cart_navigation .button";
         this.termsCheck = "#cgv";
     }
 
@@ -12,7 +12,7 @@ class ShippingStepPage {
     }
 
     public proceedCheckout(): void {
-        cy.get(this.checkbtn).click();
+        cy.get(this.proceedToCheckout).click();
     }
 }
 
