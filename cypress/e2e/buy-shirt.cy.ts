@@ -29,7 +29,7 @@ describe("Buy a t-shirt", () => {
     shopingCartPage.proceedTocheckout();
     loginPage.login(email, password);
     addressStep.goTologinButton();
-    shippingStep.acceptTermsCheck();
+    shippingStep.checkacceptTerms();
     shippingStep.proceedCheckout();
     paymentStep.bankwirePay();
     paymentStep.confirmOrder();

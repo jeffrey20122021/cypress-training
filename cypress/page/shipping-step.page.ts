@@ -7,7 +7,7 @@ class ShippingStepPage {
         this.termsCheck = "#cgv";
     }
 
-    public accepttermsCheck(): void {
+    public acceptTerms(): void {
         cy.get(this.termsCheck).click();
     }
 
