@@ -6,12 +6,12 @@ class PaymentStepPage {
 
     constructor() {
         this.payButton = "a.bankwire";
-        this.confirmOrderButton = "#cart_navigation .button span";
+        this.confirmOrderButton = ".cart_navigation";
         this.confMessage = "#center_column > div > p > strong";
     }
 
     public confirmOrder(): void {
-        cy.get(this.confirmOrderButton).click();
+        cy.get(this.confirmOrderButton).contains("I confirm my order").click();
     }
 
     public bankwirePay(): void {

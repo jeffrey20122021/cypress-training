@@ -3,7 +3,7 @@ class ShippingStepPage {
     private termsCheck: string;
 
     constructor() {
-        this.proceedToCheckout = ".cart_navigation .button";
+        this.proceedToCheckout = ".cart_navigation";
         this.termsCheck = "#cgv";
     }
 
@@ -12,7 +12,7 @@ class ShippingStepPage {
     }
 
     public proceedCheckout(): void {
-        cy.get(this.proceedToCheckout).click();
+        cy.get(this.proceedToCheckout).contains("Proceed to checkout").click();
     }
 }
 
