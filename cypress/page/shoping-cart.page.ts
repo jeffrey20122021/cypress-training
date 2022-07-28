@@ -5,7 +5,7 @@ class ShopingCartPage {
       this.proceedCheckout = ".cart_navigation a[title='Proceed to checkout'";
     }
   
-    public proceedTocheckout(): void {
+    public proceedToCheckout(): void {
       cy.get(this.proceedCheckout).click();
     }
   }

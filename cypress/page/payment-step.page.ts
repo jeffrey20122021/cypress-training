@@ -7,7 +7,7 @@ class PaymentStepPage {
     constructor() {
         this.payButton = "a.bankwire";
         this.confirmOrderButton = ".cart_navigation";
-        this.confMessage = ".center_column";
+        this.confMessage = ".cheque-indent strong";
     }
 
     public confirmOrder(): void {
@@ -19,8 +19,7 @@ class PaymentStepPage {
     }
 
     public confirmMessage(message: string) {
-        cy.get(this.confMessage).contains("Your order on My Store is complete.");
-        return this;
+        cy.get(this.confMessage).should("have.text", message);
     }
 }
 export { PaymentStepPage }
