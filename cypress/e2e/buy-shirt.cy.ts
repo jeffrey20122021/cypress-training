@@ -28,7 +28,6 @@ describe("Buy a t-shirt", () => {
   const password = "WorkshopProtractor";
   const message = "Your order on My Store is complete.";
 
-
   menuContentPage = new MenuContentPage();
   productListPage = new ProductListPage();
   shopingCartPage = new ShopingCartPage();
