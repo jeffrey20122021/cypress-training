@@ -1,18 +1,18 @@
 class ProductListPage {
-    private addbtn: string;
-    private checkout: string;
+    private additemBtn: string;
+    private checkoutItem: string;
   
     constructor() {
-      this.addbtn = "#center_column a.button.ajax_add_to_cart_button.btn.btn-default";
-      this.checkout = "[style*='display: block;'] .button-container > a";
+      this.additemBtn = ".button-container a[title='Add to cart']";
+      this.checkoutItem = ".button-container a[title='Proceed to checkout']";
     }
   
-    public addcart(): void {
-      cy.get(this.addbtn).click();
+    public addToCart(): void {
+      cy.get(this.additemBtn).click();
     }
   
-    public pcheckout(): void {
-      cy.get(this.checkout).click();
+    public proceedToCheckout(): void {
+      cy.get(this.checkoutItem).click();
     }
   }
   

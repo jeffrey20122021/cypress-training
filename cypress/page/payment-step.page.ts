@@ -1,14 +1,17 @@
 class PaymentStepPage {
     private payButton: string;
-    private confirmOrderMessage: string;
+    private confirmOrderButton: string;
+    private confMessage:string;
+    
 
     constructor() {
         this.payButton = "a.bankwire";
-        this.confirmOrderMessage = "#cart_navigation>button>span";
+        this.confirmOrderButton = ".cart_navigation";
+        this.confMessage = ".cheque-indent strong";
     }
 
     public confirmOrder(): void {
-        cy.get(this.confirmOrderMessage).click();
+        cy.get(this.confirmOrderButton).contains("I confirm my order").click();
     }
 
     public bankwirePay(): void {
@@ -16,7 +19,7 @@ class PaymentStepPage {
     }
 
     public confirmMessage(message: string) {
-        cy.get("#center_column > div > p > strong").should("have.text", message);
+        cy.get(this.confMessage).should("have.text", message);
     }
 }
 export { PaymentStepPage }

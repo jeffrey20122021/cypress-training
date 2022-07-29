@@ -2,7 +2,7 @@ class AddressStepPage {
     private addressButton: string;
 
     constructor() {
-        this.addressButton = ".cart_navigation > .button > span";
+        this.addressButton = ".cart_navigation .button[name='processAddress']";
     }
 
     public goTologinButton(): void {
