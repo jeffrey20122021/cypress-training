@@ -17,9 +17,25 @@ const shopingCartPage = new ShopingCartPage();
 const productListPage = new ProductListPage();
 
 describe("Buy a t-shirt", () => {
+  let menuContentPage: MenuContentPage;
+  let productListPage: ProductListPage;
+  let shopingCartPage: ShopingCartPage;
+  let loginPage: LoginPage;
+  let addressStep: AddressStepPage;
+  let shippingStep: ShippingStepPage;
+  let paymentStep: PaymentStepPage;
   const email = "aperdomobo@gmail.com";
   const password = "WorkshopProtractor";
   const message = "Your order on My Store is complete.";
+
+
+  menuContentPage = new MenuContentPage();
+  productListPage = new ProductListPage();
+  shopingCartPage = new ShopingCartPage();
+  loginPage = new LoginPage();
+  addressStep = new AddressStepPage();
+  shippingStep = new ShippingStepPage();
+  paymentStep = new PaymentStepPage();
 
   it("then should be bought a t-shirt", () => {
     menuContentPage.visitMenuContentPage();
