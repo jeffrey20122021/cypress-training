@@ -16,7 +16,7 @@ describe("Buy a t-shirt", () => {
   let addressStep: AddressStepPage;
   let shippingStep: ShippingStepPage;
   let paymentStep: PaymentStepPage;
-  const product = "Printed Dress";
+  const product = "Faded Short Sleeve T-shirts";
   const email = "aperdomobo@gmail.com";
   const password = "WorkshopProtractor";
   const message = "Your order on My Store is complete.";
