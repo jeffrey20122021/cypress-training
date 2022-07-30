@@ -8,7 +8,7 @@ describe("the user navigates to the dresses page should", () => {
   before(() => {
     menuContentPage = new MenuContentPage();
     dressesListPage = new DressesListPage();
-    names = ["Printed Chiffon Dress","Printed Summer Dress","Printed Dress", "Printed Dress","Printed Summer Dress"];
+    names = ["Printed Chiffon Dress", "Printed Summer Dress", "Printed Dress", "Printed Dress", "Printed Summer Dress"];
   });
 
   it("show the available dresses", () => {
