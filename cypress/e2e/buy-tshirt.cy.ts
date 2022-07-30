@@ -16,6 +16,7 @@ describe("Buy a t-shirt", () => {
   let addressStep: AddressStepPage;
   let shippingStep: ShippingStepPage;
   let paymentStep: PaymentStepPage;
+  const product = "Faded Short Sleeve T-shirts";
   const email = "aperdomobo@gmail.com";
   const password = "WorkshopProtractor";
   const message = "Your order on My Store is complete.";
@@ -33,7 +34,7 @@ describe("Buy a t-shirt", () => {
   it("then should be bought a t-shirt", () => {
     menuContentPage.visitMenuContentPage();
     menuContentPage.goToTShirtMenu();
-    productListPage.addToCart();
+    productListPage.addTShirtToCart(product);
     productListPage.proceedToCheckout();
     shopingCartPage.proceedToCheckout();
     loginPage.login(email, password);
