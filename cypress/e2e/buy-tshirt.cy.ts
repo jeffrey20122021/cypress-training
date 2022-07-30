@@ -8,14 +8,6 @@ import {
   ProductListPage,
 } from "../page/index";
 
-const menuContentPage = new MenuContentPage();
-const loginPage = new LoginPage();
-const addressStep = new AddressStepPage();
-const shippingStep = new ShippingStepPage();
-const paymentStep = new PaymentStepPage();
-const shopingCartPage = new ShopingCartPage();
-const productListPage = new ProductListPage();
-
 describe("Buy a t-shirt", () => {
   let menuContentPage: MenuContentPage;
   let productListPage: ProductListPage;
@@ -28,14 +20,15 @@ describe("Buy a t-shirt", () => {
   const password = "WorkshopProtractor";
   const message = "Your order on My Store is complete.";
 
-
-  menuContentPage = new MenuContentPage();
-  productListPage = new ProductListPage();
-  shopingCartPage = new ShopingCartPage();
-  loginPage = new LoginPage();
-  addressStep = new AddressStepPage();
-  shippingStep = new ShippingStepPage();
-  paymentStep = new PaymentStepPage();
+  before(() => {
+    menuContentPage = new MenuContentPage();
+    productListPage = new ProductListPage();
+    shopingCartPage = new ShopingCartPage();
+    loginPage = new LoginPage();
+    addressStep = new AddressStepPage();
+    shippingStep = new ShippingStepPage();
+    paymentStep = new PaymentStepPage();
+  });
 
   it("then should be bought a t-shirt", () => {
     menuContentPage.visitMenuContentPage();

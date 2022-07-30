@@ -1,14 +1,14 @@
-import { MenuContentPage, DressesListPage } from "../page/index";
+import {MenuContentPage, DressesListPage} from "../page/index";
 
 describe("the user navigates to the dresses page should", () => {
-  let names: string[];
   let menuContentPage: MenuContentPage;
   let dressesListPage: DressesListPage;
+  let names: string[];
 
   before(() => {
     menuContentPage = new MenuContentPage();
     dressesListPage = new DressesListPage();
-    names = ["Printed Chiffon Dress", "Printed Summer Dress", "Printed Dress", "Printed Dress", "Printed Summer Dress"];
+    names = ["Printed Chiffon Dress","Printed Summer Dress","Printed Dress", "Printed Dress","Printed Summer Dress"];
   });
 
   it("show the available dresses", () => {
