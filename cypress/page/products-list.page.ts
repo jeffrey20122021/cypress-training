@@ -12,6 +12,7 @@ class ProductListPage {
     public addTShirtToCart(product:string): void {
       this.findProductByName(product).find(this.additemBtn).click();
     }
+    
     private findProductByName (product:string) {
       return cy.get(this.allProducts).filter(`:contains(${product})`);
     }
