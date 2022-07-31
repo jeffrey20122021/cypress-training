@@ -12,7 +12,6 @@ export default defineConfig({
 
       // IMPORTANT return the updated config object
       return config
-
     },
     reporter: "cypress-multi-reporters",
     reporterOptions: {
