@@ -22,8 +22,8 @@ class UploadPage {
       cy.get(this.uploadBtn).click();
     }
   
-    public msgConfirmation(fileName: string): void {
-      cy.get(this.msgconfirmUpload).contains("File Uploaded!");
+    public msgConfirmation(fileName: string, msg:string): void {
+        cy.get(this.msgconfirmUpload).should("have.text", msg);
       cy.get(this.uploadedFile).should("contain", fileName);
     }
   }
