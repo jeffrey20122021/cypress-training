@@ -29,3 +29,6 @@ Cypress.on("uncaught:exception", (err, runnable) => {
     // failing the test
     return false;
 });
+
+import 'cypress-file-upload';
+require('cypress-downloadfile/lib/downloadFileCommand');
