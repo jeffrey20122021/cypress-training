@@ -18,7 +18,7 @@ describe("Student Registration Form", () => {
     personalFormPage = new PersonalFormPage();
   });
 
-  it("Filling form",() => {
+  it("Filling form", () => {
     personalFormPage.visitUrlPage();
     personalFormPage.fillForm(personalInformation);
     personalFormPage.verifySubmitTitle("Thanks for submitting the form");
