@@ -33,20 +33,20 @@ class PersonalFormPage {
       cy.visit(this.formURL);
     }
   
-    public fillForm(Info: PersonalInfo): void {
-      cy.get(this.firstName).type(Info.name);
-      cy.get(this.lastName).type(Info.lastName);
-      cy.get(this.email).type(Info.email);
-      cy.get(this.gender).find(`input[value = '${Info.gender}']`).click();
-      cy.get(this.mobile).type(Info.mobileNumber);
-      cy.get(this.birthDate).type(`{selectall}${Info.dateOfBirth}{enter}`);
-      Info.hobbies.forEach((hobbie) => {
+    public fillForm(info: PersonalInfo): void {
+      cy.get(this.firstName).type(info.name);
+      cy.get(this.lastName).type(info.lastName);
+      cy.get(this.email).type(info.email);
+      cy.get(this.gender).find(`input[value = '${info.gender}']`).click({force: true});
+      cy.get(this.mobile).type(info.mobileNumber);
+      cy.get(this.birthDate).type(`{selectall}${info.dateOfBirth}{enter}`);
+      info.hobbies.forEach((hobbie) => {
         cy.get(this.hobbies).find(".custom-control-label").filter(`:contains("${hobbie}")`).click();
       });
-      cy.get(this.currentAddress).type(Info.currentAddress);
-      cy.get(this.state).type(`${Info.state} {enter}`);
-      cy.get(this.city).type(`${Info.city} {enter}`);
-      cy.get(this.submit).click();
+      cy.get(this.currentAddress).type(info.currentAddress);
+      cy.get(this.state).type(`${info.state} {enter}`,{force: true});
+      cy.get(this.city).type(`${info.city} {enter}`,{force: true});
+      cy.get(this.submit).click({force: true});
     }
   
     public verifySubmitTitle(msg: string): void {
