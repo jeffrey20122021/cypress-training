@@ -20,7 +20,7 @@ class PersonalFormPage {
       this.gender = "#genterWrapper";
       this.mobile = "#userNumber";
       this.birthDate = "#dateOfBirthInput";
-      this.hobbies = "#hobbiesWrapper";
+      this.hobbies = "#hobbiesWrapper .custom-control-label";
       this.currentAddress = "#currentAddress";
       this.state = "#react-select-3-input";
       this.city = "#react-select-4-input";
@@ -45,7 +45,7 @@ class PersonalFormPage {
       });
       cy.get(this.currentAddress).type(info.currentAddress);
       cy.get(this.state).type(`${info.state} {enter}`,{force: true});
-      cy.get(this.city).type(`${info.city} {enter}`,{force: true});
+      cy.get(this.city).type(`${info.city} {enter}`, {force: true});
       cy.get(this.submit).click({force: true});
     }
   
