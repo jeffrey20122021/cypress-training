@@ -15,5 +15,6 @@ describe("Upload Test", () =>{
   it("Uploading a File", () => {
     upload.visitPage();
     upload.uploadFile(fileName);
-    upload.msgConfirmation(msgConfirmation,fileName)});
+    upload.msgConfirmation(msgConfirmation, fileName);
   });
+});
