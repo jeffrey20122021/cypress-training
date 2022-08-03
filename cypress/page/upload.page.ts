@@ -9,7 +9,7 @@ class UploadPage {
       this.uploadToPageURL= "https://the-internet.herokuapp.com/upload";
       this.selectFile = "#file-upload";
       this.uploadBtn = "#file-submit";
-      this.msgconfirmUpload = "#content";
+      this.msgconfirmUpload = "#content  > div > h3";
       this.uploadedFile = "#uploaded-files";
     }
   
@@ -22,7 +22,7 @@ class UploadPage {
       cy.get(this.uploadBtn).click();
     }
   
-    public msgConfirmation(fileName: string, msg:string): void {
+    public msgConfirmation(msg:string, fileName: string): void {
         cy.get(this.msgconfirmUpload).should("have.text", msg);
       cy.get(this.uploadedFile).should("contain", fileName);
     }
