@@ -21,4 +21,3 @@ class DownloadPage {
   }
   
   export {DownloadPage};
-  
