@@ -7,7 +7,7 @@ class IframePage {
 
     constructor() {
         this.pageURL = "https://www.w3schools.com/html/html_iframe.asp";
-        this.cssPageURL = "https://www.w3schools.com/css/default.asp";
+        this.cssPageURL = "https://www.w3schools.com/css/";
         this.cssBtn = "#topnav a[title='CSS Tutorial']";
         this.iframePageTitle = "iframe[title='W3Schools HTML Tutorial']";
     }
