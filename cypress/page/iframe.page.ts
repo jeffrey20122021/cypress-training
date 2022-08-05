@@ -21,8 +21,8 @@ class IframePage {
 
     goToCssPageInFrame() {
         cy.iframe(this.iframePageTitle).find(this.cssBtn).click();
-    cy.frameLoaded(this.iframePageTitle, {url: this.cssPageURL});
+        cy.frameLoaded(this.iframePageTitle, { url: this.cssPageURL });
     }
 }
 
-export {IframePage};
+export { IframePage };
